@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9948c14d4837897b7c8c0f2288abe75e",
+    "revision": "a7ef0da184373150d245b23449abbe67",
     "url": "/index.html"
   },
   {
-    "revision": "ae6251a67dee3a5198a9",
-    "url": "/static/css/main.150ffd32.chunk.css"
+    "revision": "40d2aa3d9bce7447bbfc",
+    "url": "/static/css/main.0d11cb6b.chunk.css"
   },
   {
     "revision": "e81f81e298127c6318d4",
@@ -16,32 +16,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0c514ee6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae6251a67dee3a5198a9",
-    "url": "/static/js/main.932bd0ee.chunk.js"
+    "revision": "40d2aa3d9bce7447bbfc",
+    "url": "/static/js/main.3bacafd6.chunk.js"
   },
   {
     "revision": "4040b55ff6b868e876aa",
     "url": "/static/js/runtime-main.2c219ed3.js"
   },
   {
-    "revision": "c57966adabf72b655832eaf0dbbac94b",
-    "url": "/static/media/Recoleta-Bold.c57966ad.ttf"
+    "revision": "4e40789fe985a2ba34cdf76c7fa5a54e",
+    "url": "/static/media/EuclidCircularB-Bold.4e40789f.ttf"
   },
   {
-    "revision": "1dd453d089bdaf8187c1d7488cb9ff32",
-    "url": "/static/media/Recoleta-Light.1dd453d0.ttf"
+    "revision": "a523ad473d5bad00dcdda4a3a46cec5d",
+    "url": "/static/media/EuclidCircularB-Light.a523ad47.ttf"
   },
   {
-    "revision": "b730951bf8361397041e17799be8e548",
-    "url": "/static/media/Recoleta-Medium.b730951b.ttf"
+    "revision": "e5a8e44f6ed4560fa934c8e0233d1597",
+    "url": "/static/media/EuclidCircularB-Medium.e5a8e44f.ttf"
   },
   {
-    "revision": "7eb49619205b759292e7ec0a78a61e6c",
-    "url": "/static/media/Recoleta-Regular.7eb49619.ttf"
+    "revision": "f29cfc3fa5ade3421e1a2c66f9e01a34",
+    "url": "/static/media/EuclidCircularB-Regular.f29cfc3f.ttf"
   },
   {
-    "revision": "3a626358e1ce53288991d25763b06e95",
-    "url": "/static/media/Recoleta-SemiBold.3a626358.ttf"
+    "revision": "ba85f91865ca87b927c887494f035391",
+    "url": "/static/media/EuclidCircularB-SemiBold.ba85f918.ttf"
   },
   {
     "revision": "c2e2375b8da5b44221d0469c090edfba",
@@ -108,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/search.8e515933.svg"
   },
   {
-    "revision": "b2969853bf6f3d95616a58cbfa8b64de",
-    "url": "/static/media/settings.b2969853.svg"
+    "revision": "cf351923a7d03de41ce5ecbfc6de6495",
+    "url": "/static/media/settings.cf351923.svg"
   },
   {
     "revision": "e0682122ab7ad6856f42a91ec2a10c9a",

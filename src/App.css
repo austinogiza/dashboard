@@ -20,24 +20,24 @@
 }
 
 @font-face {
-  src: url("./fonts/Recoleta-Medium.ttf");
+  src: url("./fonts/EuclidCircularB-Medium.ttf");
   font-family: "Recoleta-Medium";
 }
 
 @font-face {
-  src: url("./fonts/Recoleta-Light.ttf");
+  src: url("./fonts/EuclidCircularB-Light.ttf");
   font-family: "Recoleta-Light";
 }
 @font-face {
-  src: url("./fonts/Recoleta-Bold.ttf");
+  src: url("./fonts/EuclidCircularB-Bold.ttf");
   font-family: "Recoleta-Bold";
 }
 @font-face {
-  src: url("./fonts/Recoleta-SemiBold.ttf");
+  src: url("./fonts/EuclidCircularB-SemiBold.ttf");
   font-family: "Recoleta-Semi";
 }
 @font-face {
-  src: url("./fonts/Recoleta-Regular.ttf");
+  src: url("./fonts/EuclidCircularB-Regular.ttf");
   font-family: "Recoleta-Regular";
 }
 
@@ -57,35 +57,80 @@ body {
 
 .Welcome {
   width: 100%;
+  height: 100%;
   min-height: 300px;
   background: url("./images/head.svg") no-repeat center center/cover;
   color: var(--white);
-  /* background-repeat: no-repeat;
+  /*background-repeat: no-repeat;
   background-position: right 0px top 70%;
-  background-size: 40%; */
+  background-size: 40%;
+  */
   padding: 10px 0;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
   margin-top: 30px;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Recoleta-Semi";
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.Welcome .container {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  height: 100%;
+  width: 100%;
+}
+.Welcome .name {
+  justify-self: flex-start;
 }
 
-.Welcome .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.Welcome .container h1 {
+.Welcome .name h1 {
   font-size: 34px;
+  font-family: "Recoleta-Semi";
+}
+.Welcome .name span {
+  font-family: "Recoleta-Light";
+  display: block;
+}
+
+.Welcome .card_det {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.Welcome .card_det h1 {
+  font-family: "Recoleta-Regular";
+  font-size: 34px;
+}
+
+.Welcome .card_det p {
+  font-family: "Recoleta-Light";
+  font-size: 14px;
+  margin: 4px 0;
+}
+.btn_hide {
+  width: 130px;
+  height: 52px;
+
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Recoleta-Regular";
+  font-size: 18px;
+  color: var(--black);
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+  background: var(--white);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .Sidebar {
   width: 100%;
@@ -116,6 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-left: 4px solid var(--green);
 }
 
 .Body {
@@ -130,7 +176,7 @@ body {
   width: 100%;
   height: 90px;
   background: var(--white);
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
   display: flex;
 
   flex-direction: row;
@@ -140,7 +186,7 @@ body {
   flex: 0 0 15%;
   height: 100%;
   width: 100%;
-  border-left: 1px solid var(--black);
+
   cursor: pointer;
 }
 
@@ -202,7 +248,7 @@ form input {
   background-position: top 50% left 5px;
   background-size: 5%;
   padding: 10px 10px 10px 30px;
-  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
 
@@ -269,14 +315,14 @@ form input::placeholder {
 
 .Card {
   width: 100%;
-  min-height: 400px;
+  min-height: 250px;
   height: 100%;
 }
 
 .Card .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(400px, auto);
+  grid-auto-rows: minmax(250px, auto);
   grid-gap: 20px;
   padding: 15px;
   height: 100%;
@@ -286,14 +332,14 @@ form input::placeholder {
 .Cards {
   width: 100%;
   background: var(--white);
-  height: 250px;
+  height: 200px;
   margin: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
   transition: 0.4s ease-in cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -317,7 +363,7 @@ form input::placeholder {
   margin: 8px 0;
 }
 .Cards:hover {
-  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
 }
 
 .Account {
@@ -338,7 +384,7 @@ form input::placeholder {
 .Users_section {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
   background: var(--white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -364,7 +410,7 @@ form input::placeholder {
 .Transaction {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
   background: var(--white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -430,6 +476,8 @@ form input::placeholder {
   height: 40px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .User img {
   flex: 0 0 20%;
@@ -445,17 +493,48 @@ form input::placeholder {
   flex: 1;
   width: 100%;
   height: 100%;
-  font-family: "Recoleta-Semi";
-  font-size: 15px;
-  flex-direction: row;
   justify-content: center;
+  font-size: 15px;
+  font-family: "Recoleta-Regular";
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  margin: 0 0 0 4px;
+  margin: 0 0 0 6px;
+  justify-self: center;
 }
 @media only screen and (max-width: 600px) {
+  .Welcome .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    height: 100%;
+    width: 100%;
+  }
+
+  .Welcome .name h1 {
+    font-size: 24px;
+    font-family: "Recoleta-Semi";
+  }
+  .Welcome .name span {
+    font-family: "Recoleta-Light";
+    display: block;
+  }
+
+  .Welcome .card_det {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .Welcome .card_det h1 {
+    font-family: "Recoleta-Regular";
+    font-size: 24px;
+  }
+
   form input {
     height: 40px;
-    width: 200px;
+    width: 180px;
     background-image: url("./images/search.svg");
     background-repeat: no-repeat;
     background-position: top 50% left 5px;
@@ -488,7 +567,7 @@ form input::placeholder {
   }
   .Card .container {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(250px, auto);
+    grid-auto-rows: minmax(200px, auto);
   }
 
   .Account .container {
