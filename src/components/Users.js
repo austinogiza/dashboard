@@ -11,7 +11,7 @@ class Users extends Component {
           <div className="Users_section">
               <div className="container">
                   <h1>Account holders</h1>
-
+ 
                   
                   <User img={profile} name="Daniel"/>
                   <User img={dami} name="Daniella Rose"/>

@@ -8,9 +8,9 @@ class Account extends Component {
         return (
            <div className="Account">
                <div className="container">
+                <Transaction/>
+            <Users/>
 
-<Transaction/>
-<Users/>
 
                </div>
            </div>
